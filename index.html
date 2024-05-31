@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link href="tailwind.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anta&family=Lato&display=swap" rel="stylesheet">
+    <style>
+      body {
+        margin: 0;
+        -webkit-font-smoothing: antialiased;
+      }
+      .font-anta {
+        font-family: 'Anta', sans-serif;
+      }
+      .font-lato {
+        font-family: 'Lato', sans-serif;
+      }
+      .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color:black;
+        color: whitesmoke;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .footer .social-icon {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2px 0;
+        flex-wrap: wrap;
+      }
+      .footer .social-icon li {
+        list-style: none;
+      }
+      .footer .social-icon li a {
+        font-size: 1.4em;
+        color: #fff;
+        margin: 0 5px;
+        display: inline-block;
+        transition: 0.5s;
+      }
+      .footer .social-icon li a:hover {
+        transform: translateY(-5px);
+      }
+    </style>
+  </head>
+    <body>
+    <div class="flex h-screen bg-black">
+      <div class="w-1/2 flex flex-col justify-center px-8">
+        <div style="max-width:500px;" class="mx-auto">
+        <h1 class="text-white text-4xl mb-8 font-anta leading-none">
+          USING WEBGL TO CREATE A REALISTIC LOOKING EARTH IN SPACE
+        </h1>
+        <p class="text-gray-400 mb-8 font-lato">
+          The Earth is dynamic in nature and rotates in the direction of mouseover and change its speed depending on its distance from Earth.
+        </p>
+        <a href="#" class="text-white bg-green-600 inline-block px-8 py-4 rounded-full font-lato">
+          Learn more</a>
+      </div>
+    </div>
+      <div class="w-1/2" id="canvasContainer">
+      <canvas></canvas>
+    </div>
+    <div class="footer">
+      <p class="text-white font-anta">Made by &rarr; Chaitanya Jaiswal</p>
+      <ul class="social-icon">
+        <li><a href="https://www.linkedin.com/in/chaitanya-jaiswal-097625231/"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+        <li><a href="https://github.com/ChaitanyaJ007/"><ion-icon name="logo-github"></ion-icon></a></li>
+      </ul>
+    </div>
+    <script type="module" src="/main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  </body>
+</html>
