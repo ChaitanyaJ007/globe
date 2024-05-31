@@ -9,12 +9,8 @@ import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls.js';
 const canvasContainer = document.querySelector('#canvasContainer')
 
 const scene = new THREE.Scene()
-const camera = new THREE.PerspectiveCamera(
-  75,
-  canvasContainer.offsetWidth / canvasContainer.offsetHeight,
-  0.1, 
-  1000
-)
+const camera = new THREE.PerspectiveCamera(75,
+  canvasContainer.offsetWidth / canvasContainer.offsetHeight, 0.1, 1000)
 
 const renderer = new THREE.WebGLRenderer(
   { antialias: true,
